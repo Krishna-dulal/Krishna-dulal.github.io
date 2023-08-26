@@ -12,7 +12,7 @@ body {
 
 
 header {
-    background-color: #333;
+    background-color: #1e207b;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -83,33 +83,25 @@ footer {
 .social-media {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align icons and text on the left side */
     margin-top: 10px;
+}
+
+.social-media a {
+    display: flex; /* Align icon and text in a row */
+    align-items: center; /* Align vertically */
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px; /* Adjust spacing between social media links */
 }
 
 .social-media a img {
     width: 30px;
     height: 30px;
-    margin-bottom: 5px;
+    margin-right: 10px; /* Add space between icon and text */
     transition: transform 0.3s ease-in-out;
 }
 
-.social-media a img:hover {
+.social-media a:hover img {
     transform: scale(1.2);
 }
-
-#resume a {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-#resume a:hover {
-    background-color: #0056b3;
-}
-
