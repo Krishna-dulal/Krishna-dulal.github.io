@@ -1,17 +1,16 @@
-/* Reset some default browser styles */
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling for the body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* Styling for header and navigation */
+
 header {
     background-color: #333;
     color: #fff;
@@ -33,14 +32,14 @@ nav ul li a {
     color: #fff;
 }
 
-/* Styling for sections and containers */
+
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Styling for portfolio items */
+
 .portfolio-item {
     margin-bottom: 30px;
 }
@@ -50,7 +49,7 @@ nav ul li a {
     height: auto;
 }
 
-/* Styling for footer */
+
 footer {
     text-align: center;
     padding: 10px;
@@ -58,10 +57,10 @@ footer {
     color: #fff;
 }
 
-/* About Me section */
+
 #about .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #about .content {
@@ -69,30 +68,48 @@ footer {
 }
 
 #about .image {
-    flex: 1;
-    text-align: right;
+    width: 200px;
+    text-align: center;
+    margin-right: 20px;
 }
 
 #about .image img {
-    max-width: 100%;
-    height: auto;
-    width: 150px; /* Adjust the width as needed */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .social-media {
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
 }
 
 .social-media a img {
     width: 30px;
     height: 30px;
+    margin-bottom: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
 .social-media a img:hover {
     transform: scale(1.2);
+}
+
+#resume a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#resume a:hover {
+    background-color: #0056b3;
 }
 
