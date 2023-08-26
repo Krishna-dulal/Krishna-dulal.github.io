@@ -78,3 +78,21 @@ footer {
     height: auto;
     width: 150px; /* Adjust the width as needed */
 }
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
