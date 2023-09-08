@@ -1,8 +1,10 @@
+/* Reset styles for common elements */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
+/* Style for the navigation bar */
 #main-nav {
     position: fixed;
     top: 0;
@@ -11,7 +13,9 @@ body, h1, h2, h3, p, ul, li {
     background-color: #fff; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     z-index: 1000; 
+}
 
+/* Body styles */
 body {
     padding-top: 60px;
     font-family: Arial, sans-serif;
@@ -19,6 +23,7 @@ body {
     color: #333;
 }
 
+/* Header styles */
 header {
     background-color: #1e207b;
     color: #fff;
@@ -26,6 +31,7 @@ header {
     text-align: center;
 }
 
+/* Navigation styles */
 nav ul {
     list-style: none;
 }
@@ -40,12 +46,14 @@ nav ul li a {
     color: #fff;
 }
 
+/* Container styles */
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Portfolio item styles */
 .portfolio-item {
     margin-bottom: 30px;
 }
@@ -55,6 +63,7 @@ nav ul li a {
     height: auto;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -62,6 +71,7 @@ footer {
     color: #fff;
 }
 
+/* About section styles */
 #about .container {
     display: flex;
     align-items: flex-start;
@@ -84,6 +94,7 @@ footer {
     object-fit: cover;
 }
 
+/* Social media styles */
 .social-media {
     display: flex;
     flex-direction: column;
