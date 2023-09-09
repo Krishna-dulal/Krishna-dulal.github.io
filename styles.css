@@ -119,6 +119,9 @@ footer {
     transform: scale(1.2);
 }
 
+.content p{
+    margin-bottom: 12px;
+}
 
 .name-email {
     text-align: center;
