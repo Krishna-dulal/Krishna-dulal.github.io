@@ -120,7 +120,38 @@ footer {
 }
 
 .content p{
-    margin-bottom: 15px;
-    padding: 10px;
-    margin-left: 15px;
+
+    padding: 15px;
+   
+}
+
+.name-email {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name-email h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.name-email h4 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.name-email p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.name-email a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.name-email a:hover {
+    color: #8e4ae2;
 }
