@@ -116,3 +116,7 @@ footer {
 .social-media a:hover img {
     transform: scale(1.2);
 }
+
+.content p{
+    margin-bottom: 20px;
+}
