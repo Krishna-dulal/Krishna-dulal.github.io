@@ -202,7 +202,6 @@ footer {
 .about-info .social-media a {
     display: flex;
     align-items: left;
-    margin-top: 10px;
 }
 
 .about-info .social-media a img {
