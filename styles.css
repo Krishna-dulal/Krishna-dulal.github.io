@@ -163,9 +163,7 @@ footer {
     top: 60px; 
     right: 10px; 
     width: 200px; 
-    background-color: white;  /* Can't be transparent */
     padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     z-index: 1000; 
     text-align: left; 
 }
@@ -182,7 +180,7 @@ footer {
 }
 
 .about-info .name-email {
-    text-align: left; 
+    text-align: center; 
     margin-top: 10px;
 }
 
@@ -197,24 +195,28 @@ footer {
 }
 
 .about-info .social-media {
-    text-align: left; /* Ensure text alignment is left */
+    text-align: center; 
     margin-top: 10px;
 }
 
 .about-info .social-media a {
     display: flex;
-    align-items: center;
+    align-items: left;
     margin-top: 10px;
 }
 
 .about-info .social-media a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    align-items:left;
 }
 
-/* Optional: Hover effect for links */
+
 .name-email a:hover,
 .about-info .social-media a:hover {
-    color: #8e4ae2; /* Change color on hover */
+    color: white;
+    background-color: green;
 }
+
+
+
