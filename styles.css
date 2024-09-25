@@ -95,7 +95,9 @@ footer {
     width: 130px;
     height: 170px;
     object-fit: cover;
-    position: sticky;
+    position: fixed;
+    top: 60px; /* Place image just below the navbar */
+    right: 10px; /* Fix to the top-right corner */
 }
 
 .social-media {
@@ -240,22 +242,18 @@ footer {
         padding: 10px; /* Reduce container padding */
     }
 
-    .about-info {
-        position: static; /* Change from fixed to static for better flow */
-        width: 100%; /* Full width for mobile */
-        padding: 10px; /* Adjust padding */
-        margin-top: 10px; /* Add some margin */
-    }
-
-    #about .image {
-        width: 100%; /* Make image responsive */
-        margin: 10px 0; /* Margin for spacing */
-        text-align: center; /* Center the image */
-    }
-
+    /* Keep the image fixed in the top-right on mobile screens */
     #about .image img {
-        width: 80%; /* Adjust width for mobile */
-        height: auto; /* Maintain aspect ratio */
+        width: 80px; /* Adjust width for mobile */
+        height: 100px; /* Adjust height */
+        top: 60px; /* Position it below the navbar */
+        right: 10px; /* Keep it at the right side */
+        position: fixed; /* Ensure it stays fixed */
+    }
+
+    /* Ensure the text starts just after the navbar */
+    .content {
+        margin-top: 100px; /* Space below the navbar */
     }
 
     .social-media {
