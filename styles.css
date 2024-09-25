@@ -1,6 +1,6 @@
 /* General Reset for Common Elements */
 body, h1, h2, h3, p, ul, li {
-    text-align: left; /* Align text to the left for readability */
+    text-align: justify; 
     margin: 0;
     padding: 0;
 }
@@ -226,11 +226,13 @@ footer {
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
+        padding-top: 50px;
         padding-right: 10px; /* Reduce padding for smaller screens */
+
     }
 
     #main-nav {
-        padding: 10px 5px; /* Adjust padding for nav */
+        padding: 5px; /* Adjust padding for nav */
     }
 
     nav ul li {
@@ -244,9 +246,9 @@ footer {
 
     /* Keep the image fixed in the top-right on mobile screens */
     #about .image img {
-        width: 80px; /* Adjust width for mobile */
-        height: 100px; /* Adjust height */
-        top: 60px; /* Position it below the navbar */
+        width: 60px; /* Adjust width for mobile */
+        height: 80px; /* Adjust height */
+        top: 45px; /* Position it below the navbar */
         right: 10px; /* Keep it at the right side */
         position: fixed; /* Ensure it stays fixed */
     }
