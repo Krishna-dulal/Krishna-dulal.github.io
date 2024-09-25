@@ -1,4 +1,6 @@
 body, h1, h2, h3, p, ul, li {
+    text-align: justify;
+  text-justify: inter-word;
     margin: 0;
     padding: 0;
 }
