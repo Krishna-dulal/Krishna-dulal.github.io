@@ -1,6 +1,6 @@
 /* General Reset for Common Elements */
 body, h1, h2, h3, p, ul, li {
-    text-align: justify; 
+    text-align: justify; /* Justify text */
     margin: 0;
     padding: 0;
 }
@@ -95,9 +95,7 @@ footer {
     width: 130px;
     height: 170px;
     object-fit: cover;
-    position: fixed;
-    top: 60px; /* Place image just below the navbar */
-    right: 10px; /* Fix to the top-right corner */
+    position: sticky;
 }
 
 .social-media {
@@ -223,67 +221,57 @@ footer {
     background-color: green;
 }
 
-/* Mobile Styles */
+
 @media (max-width: 768px) {
     body {
-        padding-top: 50px;
-        padding-right: 10px; /* Reduce padding for smaller screens */
-
+        padding-right: 10px;
     }
 
     #main-nav {
-        padding: 5px; /* Adjust padding for nav */
+        padding: 5px;
     }
 
     nav ul li {
-        display: block; /* Stack menu items vertically */
-        margin-bottom: 10px; /* Space between menu items */
+        display: block;
+        margin-bottom: 10px;
     }
 
     .container {
-        padding: 10px; /* Reduce container padding */
+        padding: 10px;
     }
 
-    /* Keep the image fixed in the top-right on mobile screens */
+    /* Adjust profile image position and size */
     #about .image img {
-        width: 60px; /* Adjust width for mobile */
-        height: 80px; /* Adjust height */
-        top: 45px; /* Position it below the navbar */
-        right: 10px; /* Keep it at the right side */
-        position: fixed; /* Ensure it stays fixed */
+        width: 60px;
+        height: 80px;
+        top: 45px;
+        right: 10px;
+        position: relative; /* Ensure it scrolls with content */
     }
 
-    /* Ensure the text starts just after the navbar */
     .content {
-        margin-top: 100px; /* Space below the navbar */
+        margin-top: 100px; /* Start text below navbar */
     }
 
     .social-media {
-        margin-left: 0; /* Reset margin for mobile */
-        align-items: center; /* Center align items */
-    }
-
-    .social-media a {
-        margin-bottom: 5px; /* Less space between icons */
+        margin-left: 0;
+        align-items: center;
     }
 
     .name-email h2 {
-        font-size: 20px; /* Smaller font size for mobile */
+        font-size: 20px;
     }
 
     .name-email h4 {
-        font-size: 16px; /* Adjust size */
+        font-size: 16px;
     }
 
     .name-email p {
-        font-size: 14px; /* Adjust size */
+        font-size: 14px;
     }
 
-    .about-info .name-email h2 {
-        font-size: 18px; /* Smaller font size */
-    }
-
-    .about-info .name-email p {
-        font-size: 12px; /* Adjust size */
+    /* Ensure other images stay below the profile picture */
+    .portfolio-item img {
+        position: relative; /* Reset for mobile */
     }
 }
