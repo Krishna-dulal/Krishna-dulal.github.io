@@ -1,6 +1,6 @@
+/* General Reset for Common Elements */
 body, h1, h2, h3, p, ul, li {
-    text-align: justify;
-  text-justify: inter-word;
+    text-align: justify; /* Justify text */
     margin: 0;
     padding: 0;
 }
@@ -71,21 +71,23 @@ footer {
     color: #fff;
 }
 
+/* Updated About Section Styles */
 #about .container {
     padding-top: 50px;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column; /* Ensure children stack vertically */
+    align-items: flex-start; /* Align children to the start */
 }
 
 #about .content {
-    flex: 1;
+    flex: 1; /* Allow the content to grow */
+    width: 100%; /* Ensure it takes full width */
 }
 
 #about .image {
     width: 200px;
     text-align: center;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 0 20px; /* Adjust margin for the image */
 }
 
 #about .image img {
@@ -210,15 +212,11 @@ footer {
 .about-info .social-media a img {
     width: 35px;
     height: 35px;
-    align-items:left;
+    align-items: left;
 }
-
 
 .name-email a:hover,
 .about-info .social-media a:hover {
     color: white;
     background-color: green;
 }
-
-
-
